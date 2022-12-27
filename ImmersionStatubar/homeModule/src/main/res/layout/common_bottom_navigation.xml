@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:background="@color/color_fafafa"
+    android:baselineAligned="false"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_navigation_home_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="1.3dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_bottom_navigation_home_page"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1.33dp"
+            android:contentDescription="TODO"
+            android:src="@mipmap/discovery_press" />
+
+        <TextView
+            android:id="@+id/tv_bottom_navigation_home_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.43dp"
+            android:fontFamily="@font/noto_sans"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#4a90e2"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_navigation_broadcasting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_bottom_navigation_broadcasting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1.33dp"
+            android:contentDescription="TODO"
+            android:src="@mipmap/broadcast_default" />
+
+        <TextView
+            android:id="@+id/tv_bottom_navigation_broadcasting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.43dp"
+            android:fontFamily="@font/noto_sans"
+            android:gravity="center"
+            android:text="广播"
+            android:textColor="#756E6C"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_navigation_interaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_bottom_navigation_interaction"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1.33dp"
+            android:contentDescription="TODO"
+            android:src="@mipmap/home_bottom_audio_book_unselect" />
+
+        <TextView
+            android:id="@+id/tv_bottom_navigation_interaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.43dp"
+            android:fontFamily="@font/noto_sans"
+            android:gravity="center"
+            android:text="互动"
+            android:textColor="#756E6C"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_navigation_jingxuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="1dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_bottom_navigation_jingxuan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1.33dp"
+            android:contentDescription="TODO"
+            android:src="@mipmap/my_default" />
+
+        <TextView
+            android:id="@+id/tv_bottom_navigation_jingxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_bottom_navigation_jingxuan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1.43dp"
+            android:fontFamily="@font/noto_sans"
+            android:text="精选"
+            android:textColor="#756E6C"
+            android:textSize="9dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_navigation_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="1dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_bottom_navigation_my"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1.33dp"
+            android:contentDescription="TODO"
+            android:src="@mipmap/my_default" />
+
+        <TextView
+            android:id="@+id/tv_bottom_navigation_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_bottom_navigation_my"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1.43dp"
+            android:fontFamily="@font/noto_sans"
+            android:text="我的"
+            android:textColor="#756E6C"
+            android:textSize="9dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

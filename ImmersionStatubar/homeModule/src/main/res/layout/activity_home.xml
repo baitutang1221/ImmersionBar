@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_home_page_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"/>
+
+    <View
+        android:id="@+id/top_view2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/text_green"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/bottom_line_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="#f2f2f2"/>
+
+        <include
+            android:id="@+id/layout_bottom_navigation"
+            layout="@layout/common_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/common_scrolling_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom_navigation_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>

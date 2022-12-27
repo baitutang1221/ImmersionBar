@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/myFragmentRootLayout"
+    android:background="@color/color_f2f2f2">
+
+
+    <LinearLayout
+        android:id="@+id/my_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textSize="26dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="我的"/>
+
+    </LinearLayout>
+
+</FrameLayout>
